@@ -1,19 +1,20 @@
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { appRoutes } from './src/navigation'
+import { AUTH_ROUTES } from './src/feature/auth/constants'
 
 export default function App() {
+  const Stack = createNativeStackNavigator()
+
   return (
-    <View style={styles.container}>
-      <Text>Achille!</Text>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName={AUTH_ROUTES.SIGN_UP}>
+        {
+          appRoutes.map(route => (<Stack.Screen key={route.name}  name={route.id} component={route.component} options={{ title: route.name}} />
+          ))
+        }
+      </Stack.Navigator>
+    </NavigationContainer>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
-  }
-})
