@@ -1,6 +1,20 @@
+<div align="center">
+
+<img src="./assets/logo.png" width="150" alt="Achille logo">
+
 # Achille
 
-Flutter App For Fitness.
+**Fitness App**
+
+[![Shield: Contributions Welcome](https://img.shields.io/badge/contributions-welcome-blue)](#Contributing)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+# Achille (Fitness app)
+
+**Achille** is a free and open source Fitness tracking app, made with React Native.
+
+</div>
 
 
 ## Tech Stack
