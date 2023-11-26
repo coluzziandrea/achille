@@ -24,7 +24,7 @@ Following packages were used to build this project:
 - [React Native](https://reactnative.dev/)
 - [React Navigation](https://reactnavigation.org/)
 - [Firebase](https://firebase.google.com/)
-
+- [Styled Components](https://styled-components.com/docs/basics#react-native)
 
 ## Build 
 

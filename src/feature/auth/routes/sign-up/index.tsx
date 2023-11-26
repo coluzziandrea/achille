@@ -1,15 +1,15 @@
-import { View, Text, Button } from 'react-native'
+import { View, Text } from 'react-native'
 import { navigateToHomeScreen } from '../../../home/navigation'
+import { InputField } from '../../../../core/components/input-field'
+import { Button } from '../../../../core/components/button'
 
 export default function SignUpScreen({navigation}) {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Sign Up Screen</Text>
+    <View>
 
-      <Button
-        title="Go to Home"
-        onPress={() => navigateToHomeScreen(navigation)}
-      />
+      <InputField />
+
+      <Button variant='primary' label='Go to Home' onPress={() => navigateToHomeScreen(navigation)} />
     </View>
   )
 }
