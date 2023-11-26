@@ -1,17 +1,24 @@
 import { useColorScheme } from 'react-native'
 
-
 const darkTheme = {
   colors: {
-    primary: 'blue',
-    secondary: 'green'
+    highlight: {
+      primary: 'blue'
+    },
+    text: {
+      inverse: 'white'
+    }
   }
 }
 
 const lightTheme = {
   colors: {
-    primary: 'red',
-    secondary: 'brown'
+    highlight: {
+      primary: 'green'
+    },
+    text: {
+      inverse: 'white'
+    }
   }
 }
 

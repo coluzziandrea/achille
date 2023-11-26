@@ -12,12 +12,16 @@ export type ButtonProps = {
 export const Button = ({onPress, label, variant}: ButtonProps) => {
 
     const StyledButton = styled.TouchableOpacity`
-      background-color: ${({ theme }) => theme.colors[variant]};
+      background-color: ${({ theme }) => theme.colors.highlight[variant]};
+    `
+
+    const StyledText = styled.Text`
+      color: ${({ theme }) => theme.colors.text.inverse};
     `
 
     return (
       <StyledButton onPress={onPress}>
-        <Text>{label}</Text>
+        <StyledText>{label}</StyledText>
       </StyledButton>
     )
 }
