@@ -4,18 +4,11 @@ import React from 'react'
 import { appRoutes } from './src/navigation'
 import { AUTH_ROUTES } from './src/feature/auth/constants'
 import { ThemeProvider } from 'styled-components/native';
-
-
-const theme = {
-  colors: {
-    primary: 'blue',
-    secondary: 'green'
-  }
-}
+import { useAppTheme } from './src/config'
 
 export default function App() {
   const Stack = createNativeStackNavigator()
-
+  const theme = useAppTheme()
   return (
     <ThemeProvider theme={theme}>
       <NavigationContainer>

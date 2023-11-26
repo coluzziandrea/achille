@@ -1,7 +1,6 @@
-import { View, Text } from 'react-native'
+import { View } from 'react-native'
 import { navigateToHomeScreen } from '../../../home/navigation'
-import { InputField } from '../../../../core/components/input-field'
-import { Button } from '../../../../core/components/button'
+import { InputField, Button } from '../../../../core/components'
 
 export default function SignUpScreen({navigation}) {
   return (

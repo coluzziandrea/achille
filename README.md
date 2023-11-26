@@ -33,7 +33,7 @@ Following packages were used to build this project:
 
 ## Firebase config
 You have to register a project to firebase and then update the file 
-> src/config/firebase.tsx 
+> src/config/firebase/config.tsx 
 
 accordingly.
 If you own the rights to this repository, just execute 
