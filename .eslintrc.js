@@ -13,7 +13,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:jest/recommended'
   ],
-
+  'max-len': [0, 80, 2, { ignoreUrls: true }],
   parserOptions: {
     ecmaFeatures: {
       jsx: true

@@ -1,16 +1,16 @@
 import { View, Text } from 'react-native'
 import { navigateToHomeScreen } from '../../../home/navigation'
-import { InputField, Button } from '../../../../core/components'
+import { InputField, Button, Label } from '../../../../core/components'
 import { useTranslation } from 'react-i18next'
 
 export default function SignUpScreen({navigation}) {
-   const { t } = useTranslation()
+   const { t } = useTranslation("auth")
 
   return (
     <View>
-      <Text>{t('auth.signup')}</Text>
+      <Label>{t('username')}</Label>
 
-      <InputField />
+      <InputField placeholder={t("username")}/>
 
       <Button
         variant="primary"

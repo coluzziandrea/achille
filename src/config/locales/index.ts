@@ -1,8 +1,8 @@
 import i18next, { ModuleType } from 'i18next'
 import { initReactI18next } from 'react-i18next'
 import * as Localization from 'expo-localization'
-import en from './en.json'
-import it from './it.json'
+import authEn from './auth/en.json'
+import authIt from './auth/it.json'
 
 const languageDetector = {
   type: 'languageDetector' as ModuleType,
@@ -19,10 +19,10 @@ const languageDetector = {
 
 const resources = {
   en: {
-    translation: en
+    auth: authEn
   },
   it: {
-    translation: it
+    auth: authIt
   }
 }
 
@@ -39,4 +39,4 @@ i18next
     }
   })
 
-  export default i18next
+export default i18next
