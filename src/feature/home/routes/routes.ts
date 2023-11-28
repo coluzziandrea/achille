@@ -5,7 +5,6 @@ import HomeScreen from './home-screen'
 export const homeRoutes: Array<Route> = [
   {
     id: HOME_ROUTES.HOME,
-    name: 'Home',
     component: HomeScreen
   }
 ]

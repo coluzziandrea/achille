@@ -1,3 +1,4 @@
 export const AUTH_ROUTES = {
-    SIGN_UP: "achille/AUTH/SIGNUP"
+  SIGN_UP: 'AUTH/SIGNUP',
+  LOGIN: 'AUTH/LOGIN'
 }

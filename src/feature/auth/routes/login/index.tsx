@@ -3,7 +3,7 @@ import { InputField, Button, Label } from '../../../../core/components'
 import { useTranslation } from 'react-i18next'
 import { FullPageLayout } from '../../../../core/layout'
 
-export default function SignUpScreen({ navigation }) {
+export default function LoginScreen({ navigation }) {
   const { t } = useTranslation('auth')
 
   return (

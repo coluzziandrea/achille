@@ -1,5 +1,4 @@
 export type Route = {
-    id: string
-    name: string
-    component: any
+  id: string
+  component: any
 }

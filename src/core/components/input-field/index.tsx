@@ -5,6 +5,6 @@ export type InputFieldProps = {
   placeholder?: string
 }
 
-export const InputField = ({placeholder}: InputFieldProps) => {
+export const InputField = ({ placeholder }: InputFieldProps) => {
   return <TextInput placeholder={placeholder} />
 }

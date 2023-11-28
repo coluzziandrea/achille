@@ -7,6 +7,9 @@ const darkTheme = {
     },
     text: {
       inverse: 'white'
+    },
+    background: {
+      default: 'black'
     }
   }
 }
@@ -18,11 +21,16 @@ const lightTheme = {
     },
     text: {
       inverse: 'white'
+    },
+    background: {
+      default: 'white'
     }
   }
 }
 
-export const useAppTheme = () => {
+export type AppTheme = typeof darkTheme
+
+export const useAppTheme = (): AppTheme => {
   const scheme = useColorScheme()
   return scheme === 'dark' ? darkTheme : lightTheme
 }
