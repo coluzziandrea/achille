@@ -6,28 +6,32 @@ import { AUTH_ROUTES } from './src/feature/auth/constants'
 import { ThemeProvider } from 'styled-components/native'
 import { useAppTheme } from './src/config'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
+import { Provider } from 'react-redux'
+import store from './src/state'
 
 export default function App() {
   const theme = useAppTheme()
   const Stack = createNativeStackNavigator()
   return (
-    <ThemeProvider theme={theme}>
-      <SafeAreaProvider>
-        <NavigationContainer>
-          <Stack.Navigator
-            initialRouteName={AUTH_ROUTES.LOGIN}
-            screenOptions={{ headerShown: false }}
-          >
-            {appRoutes.map((route) => (
-              <Stack.Screen
-                key={route.id}
-                name={route.id}
-                component={route.component}
-              />
-            ))}
-          </Stack.Navigator>
-        </NavigationContainer>
-      </SafeAreaProvider>
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <SafeAreaProvider>
+          <NavigationContainer>
+            <Stack.Navigator
+              initialRouteName={AUTH_ROUTES.LOGIN}
+              screenOptions={{ headerShown: false }}
+            >
+              {appRoutes.map((route) => (
+                <Stack.Screen
+                  key={route.id}
+                  name={route.id}
+                  component={route.component}
+                />
+              ))}
+            </Stack.Navigator>
+          </NavigationContainer>
+        </SafeAreaProvider>
+      </ThemeProvider>
+    </Provider>
   )
 }
