@@ -1,14 +1,23 @@
 {
   "expo": {
+    "name": "Achille",
+    "slug": "achille",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
     "userInterfaceStyle": "automatic",
     "ios": {
       "userInterfaceStyle": "automatic"
     },
     "android": {
-      "userInterfaceStyle": "automatic"
+      "userInterfaceStyle": "automatic",
+      "package": "com.coluzziandrea.achille"
     },
-    "plugins": [
-      "expo-localization"
-    ]
+    "plugins": ["expo-localization", "expo-build-properties"],
+    "extra": {
+      "eas": {
+        "projectId": "5f22e22a-84c2-4137-8d28-6b184319dcd9"
+      }
+    }
   }
 }

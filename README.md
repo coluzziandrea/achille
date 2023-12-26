@@ -43,7 +43,7 @@ If you own the rights to this repository, just execute
 
 > echo $FIREBASE_PROJECT_ID
 
-and update the file with these values.
+and update the file with these values, or otherwise you can access firebase console and get the values from there.
 
 ## Run (Metro)
 
@@ -64,3 +64,13 @@ After this, you can run
 > npx expo start
 
 And when the QR code will show, you can press 'a' to start the android emulator
+
+## Build application executable
+
+Follow this [guide](https://docs.expo.dev/build/setup/) to build Android or IOS executables.
+
+### Android APK
+
+To generate an .apk, run:
+
+> eas build -p android --profile previewAndroid
