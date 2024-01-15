@@ -1,30 +1,43 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
-
+import { User } from '../types'
+import {
+  LoginByEmailAndPasswordResult,
+  loginByEmailAndPassword
+} from './action/loginByEmailAndPassword'
 export interface AuthState {
-  value: number
+  user?: User
+  error?: string
+  isLoading?: boolean
 }
 
 const initialState: AuthState = {
-  value: 1
+  user: undefined
 }
 
 export const authSlice = createSlice({
   name: 'auth',
   initialState,
-  reducers: {
-    increment: (state) => {
-      state.value += 1
-    },
-    decrement: (state) => {
-      state.value -= 1
-    },
-    incrementByAmount: (state, action: PayloadAction<number>) => {
-      state.value += action.payload
-    }
+  reducers: {},
+  extraReducers: (builder) => {
+    builder
+      .addCase(loginByEmailAndPassword.pending, (state) => {
+        console.log('[loginByEmailAndPassword]: pending')
+        state.error = undefined
+        state.user = undefined
+        state.isLoading = true
+      })
+      .addCase(
+        loginByEmailAndPassword.fulfilled,
+        (state, action: PayloadAction<LoginByEmailAndPasswordResult>) => {
+          state.isLoading = false
+          state.user = action.payload.user
+          state.error = action.payload.error
+        }
+      )
   }
 })
 
 export * from './selectors'
-export const { increment, decrement, incrementByAmount } = authSlice.actions
+export const {} = authSlice.actions
 export default authSlice.reducer
