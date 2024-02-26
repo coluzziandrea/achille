@@ -2782,17 +2782,17 @@
     react-is "^16.13.0"
     use-latest-callback "^0.1.7"
 
-"@react-navigation/elements@^1.3.23":
-  version "1.3.23"
-  resolved "https://registry.yarnpkg.com/@react-navigation/elements/-/elements-1.3.23.tgz#fcacf46c8fb78cfcd02f88267d972c68670aaafb"
-  integrity sha512-Yaq9Kb+SAt5JZfh/i3tk5059/OD7XHl4nTJpTjr4ULjC1M1hlrJoII80cTG9RZT3WR+NANW7Kgw2RKvVpCLrSg==
+"@react-navigation/elements@^1.3.24":
+  version "1.3.24"
+  resolved "https://registry.yarnpkg.com/@react-navigation/elements/-/elements-1.3.24.tgz#184eabb869338dd268761e9d0f3a4c96f8e322f3"
+  integrity sha512-zgZV50qjlv3/N+MzNV0DIRmtg30IZcR0+LaTQRP/OxLtveQkgUG6wIEKl6SXO2ykC9yF9V82msdCzKl9uPSQCA==
 
-"@react-navigation/native-stack@^6.9.19":
-  version "6.9.19"
-  resolved "https://registry.yarnpkg.com/@react-navigation/native-stack/-/native-stack-6.9.19.tgz#2ff62a023b6ef1d1623e43165fed680fe2aeaf89"
-  integrity sha512-VInZjuTXKw4/vEbVBVDymuuMy25RtTNK7RMoiBW569pmkMXsc0l8uT/A/xIWdJH7G2AvoYg0KNoTiEZos0nPyw==
+"@react-navigation/native-stack@^6.9.20":
+  version "6.9.20"
+  resolved "https://registry.yarnpkg.com/@react-navigation/native-stack/-/native-stack-6.9.20.tgz#43ffe1ec675696f267786ecad2533348cc5dbe1b"
+  integrity sha512-/QXOVJGLPNGv0RXisyI5ld9oaKAdVzwcF88Q1pOA1Icp8Yce036bcixJXBsVuUhqYCJ5cBtojWt5mW6za3cRBw==
   dependencies:
-    "@react-navigation/elements" "^1.3.23"
+    "@react-navigation/elements" "^1.3.24"
     warn-once "^0.1.0"
 
 "@react-navigation/native@^6.1.10":
