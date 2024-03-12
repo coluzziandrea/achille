@@ -8,7 +8,7 @@
     "expo-dev-client": "~3.3.9",
     "expo-localization": "~14.8.3",
     "expo-system-ui": "~2.9.3",
-    "firebase": "^10.8.0",
+    "firebase": "^10.8.1",
     "i18next": "^23.10.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
